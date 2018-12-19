@@ -10,10 +10,6 @@ knitr::opts_chunk$set(echo = TRUE)
 options(knitr.table.format = "html") 
 ```
 
-
-Settings
-----
-We are going to plot 'Mileage per gallon' vs 'Weight (1000 lbs)', by '# of cylinders'
 ```{r, eval=FALSE}
 library(plotly)
 ```
@@ -23,7 +19,7 @@ library(plotly)
 
 Settings (cont.)
 ----
-```{r, echo=TRUE}
+```{r, echo=FALSE }
 f <- list(
   family = "Courier New, monospace",
   size = 11,   color = "#6e6e6e" )
@@ -49,12 +45,6 @@ plot_ly(mtcars, x = mtcars$wt, y=mtcars$mpg, mode="markers",showlegend=TRUE,
         layout(xaxis=x, yaxis=y)
 ```
 
-Interpretation
-----
-Simply put: 
 
-- At a glance, what it can be grasped from this analysis is that the less is the weight and number of cylinders in a motor, the more is the mileage per gallon, and conversely, the more the weight, less is the mileage per gallon.
-
-  
 
 
